@@ -33,9 +33,9 @@ export const STORE_CONFIG = {
   },
   socialNote: 'Enlaces temporales a las plataformas oficiales en proceso de validación.',
 
-  // Correo de contacto y atención académica
+  // Correo de contacto y atención al cliente
   contactEmail: 'contacto@klikoratech.pe',
-  academicNotice: 'Proyecto demostrativo académico para fines de evaluación técnica y diseño UX/UI. No procesa pagos monetarios reales ni formaliza ventas comerciales.',
+  academicNotice: 'Las compras y entregas se coordinan directamente por canales de contacto. No se procesan pagos en línea ni se solicitan datos bancarios.',
 
   // Lista representativa de distritos de Lima Metropolitana y Callao
   districts: [

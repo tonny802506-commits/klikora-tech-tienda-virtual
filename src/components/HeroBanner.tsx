@@ -3,6 +3,7 @@ import { ArrowRight, Truck, Laptop, ShieldCheck, Sparkles } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { PRODUCTS } from '../data/products';
 import { STORE_CONFIG, formatCurrency } from '../config/storeConfig';
+import { ASSET_IMAGES } from '../assets/productImages';
 
 export const HeroBanner: React.FC = () => {
   const { addToCart, setIsCartOpen } = useCart();
@@ -89,7 +90,7 @@ export const HeroBanner: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden border border-white/15 shadow-2xl bg-slate-900/50 backdrop-blur-xs group">
               <img
-                src="/src/assets/images/hero_laptop_stand_workspace_1794062553849.jpg"
+                src={ASSET_IMAGES.heroWorkspace}
                 alt="Espacio de trabajo moderno con soporte ajustable para laptop y periféricos ergonómicos"
                 className="w-full h-80 sm:h-96 object-cover object-center transform transition-transform duration-500 group-hover:scale-102"
                 loading="eager"

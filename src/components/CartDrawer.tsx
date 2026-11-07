@@ -234,10 +234,10 @@ export const CartDrawer: React.FC = () => {
               </div>
             </div>
 
-            {/* Aviso breve de no cobro real */}
-            <div className="p-2 rounded-lg bg-amber-500/10 text-amber-800 text-[11px] flex items-center gap-1.5">
-              <ShieldAlert className="w-3.5 h-3.5 shrink-0 text-amber-600" />
-              <span>Demostración académica · No se realizará ningún cobro monetario.</span>
+            {/* Aviso breve de coordinación de entrega */}
+            <div className="p-2 rounded-lg bg-teal-50 border border-teal-100 text-[#078F7F] text-[11px] flex items-center gap-1.5">
+              <Truck className="w-3.5 h-3.5 shrink-0 text-[#09B6A2]" />
+              <span>Coordinación directa de entrega en Lima Metropolitana.</span>
             </div>
 
             {/* Acciones */}

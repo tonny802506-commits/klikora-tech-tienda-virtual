@@ -1,7 +1,6 @@
 import React from 'react';
 import { CartProvider } from './context/CartContext';
 import { Header } from './components/Header';
-import { AcademicDisclaimer } from './components/AcademicDisclaimer';
 import { HeroBanner } from './components/HeroBanner';
 import { CatalogSection } from './components/CatalogSection';
 import { BenefitsSection } from './components/BenefitsSection';
@@ -17,9 +16,6 @@ export default function App() {
       <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
         {/* Encabezado fijo con navegación y carrito */}
         <Header />
-
-        {/* Banner de aviso académico para cumplimiento riguroso */}
-        <AcademicDisclaimer />
 
         {/* Contenido Principal */}
         <main className="flex-1">

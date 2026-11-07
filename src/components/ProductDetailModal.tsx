@@ -97,7 +97,7 @@ export const ProductDetailModal: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Shield className="w-4 h-4 text-[#09B6A2]" />
-                  <span>Demostración académica · Producto para fines didácticos</span>
+                  <span>Garantía de calidad y atención técnica KLIKORA TECH</span>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ export const ProductDetailModal: React.FC = () => {
               {product.stock <= 0 ? (
                 <div className="p-3 bg-rose-50 text-rose-700 rounded-xl text-xs font-semibold flex items-center gap-2">
                   <AlertCircle className="w-4 h-4" />
-                  Producto actualmente agotado para la demostración.
+                  Producto actualmente agotado.
                 </div>
               ) : availableToAdd <= 0 ? (
                 <div className="p-3 bg-amber-50 text-amber-800 rounded-xl text-xs font-semibold flex items-center gap-2">

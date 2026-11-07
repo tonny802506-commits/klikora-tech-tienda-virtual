@@ -49,10 +49,9 @@ export const OrderPreparationModal: React.FC = () => {
     let text = `=================================\n`;
     text += `KLIKORA TECH · RESUMEN DE PEDIDO\n`;
     text += `«${STORE_CONFIG.slogan}»\n`;
-    text += `(Demostración Académica - Sin Cobro Real)\n`;
     text += `=================================\n`;
     text += `Fecha: ${formattedDate}\n`;
-    text += `Cliente: ${customerName.trim() || 'Cliente Demostración'}\n`;
+    text += `Cliente: ${customerName.trim() || 'Cliente'}\n`;
     text += `Distrito: ${effectiveDistrict}, Lima, ${STORE_CONFIG.country}\n`;
     if (contactPhone.trim()) {
       text += `Teléfono de contacto: ${contactPhone.trim()}\n`;
@@ -72,7 +71,7 @@ export const OrderPreparationModal: React.FC = () => {
     text += `Envío Lima Metropolitana: ${hasFreeShipping ? 'GRATIS (Supera S/ 199.00)' : formatCurrency(shippingFee)}\n`;
     text += `TOTAL A COORDINAR: ${formatCurrency(total)}\n`;
     text += `=================================\n`;
-    text += `* AVISO IMPORTANTE: Este resumen corresponde a una demostración académica. No representa una transacción pagada ni formalizada como venta comercial real.`;
+    text += `* NOTA: Este resumen está listo para coordinar la entrega y despacho. Las compras se atienden directamente por canales de contacto; no se procesan pagos en línea.`;
 
     return text;
   };
@@ -154,13 +153,13 @@ export const OrderPreparationModal: React.FC = () => {
         {/* Cuerpo del formulario y resumen */}
         <div className="p-5 sm:p-6 max-h-[75vh] overflow-y-auto space-y-6">
           
-          {/* Advertencia académica obligatoria */}
-          <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-amber-900 flex items-start gap-3">
-            <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+          {/* Indicación de coordinación de entrega */}
+          <div className="p-3.5 rounded-xl bg-teal-50 border border-teal-200/80 text-xs text-[#078F7F] flex items-start gap-3">
+            <Truck className="w-4 h-4 text-[#09B6A2] shrink-0 mt-0.5" />
             <div>
-              <strong className="block font-bold">Demostración Académica</strong>
-              <span>
-                Esta pantalla prepara un resumen para coordinación. No se realiza ningún cobro monetario, no se solicita tarjeta de crédito ni se confirma una venta comercial real.
+              <strong className="block font-bold text-slate-800">Coordinación de Entrega</strong>
+              <span className="text-slate-600">
+                Al preparar tu pedido podrás copiar el resumen con el cálculo de envío para coordinar la entrega directamente. No se solicita tarjeta de crédito ni se procesan pagos en línea.
               </span>
             </div>
           </div>

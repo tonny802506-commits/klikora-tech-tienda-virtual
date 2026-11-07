@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingCart, Menu, X, ShieldAlert } from 'lucide-react';
+import { ShoppingCart, Menu, X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { STORE_CONFIG } from '../config/storeConfig';
 
@@ -9,14 +9,6 @@ export const Header: React.FC = () => {
 
   return (
     <>
-      {/* Barra de aviso académico superior fija y discreta */}
-      <div className="bg-[#14213D] text-slate-200 text-xs py-1.5 px-4 text-center border-b border-white/10 font-medium">
-        <span className="inline-flex items-center gap-1.5">
-          <ShieldAlert className="w-3.5 h-3.5 text-[#09B6A2]" />
-          <span>Demostración académica · No procesa pagos ni registra ventas reales</span>
-        </span>
-      </div>
-
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between gap-8">
           

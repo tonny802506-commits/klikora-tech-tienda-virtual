@@ -78,9 +78,6 @@ export const ProductImage: React.FC<ProductImageProps> = ({
           className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
           loading="lazy"
         />
-        <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded text-[10px] font-medium bg-black/60 text-white backdrop-blur-xs">
-          Foto de muestra
-        </div>
       </div>
     );
   }

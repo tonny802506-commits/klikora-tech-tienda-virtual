@@ -23,19 +23,21 @@ El sitio ha sido diseñado con la identidad corporativa requerida:
 
 ```
 /
+├── public/
+│   └── images/                  # Imágenes estáticas de respaldo
 ├── src/
 │   ├── assets/
-│   │   └── images/              # Fotografías e ilustraciones de alta resolución
+│   │   ├── images/              # Fotografías originales de alta resolución
+│   │   └── productImages.ts     # MÓDULO DE IMÁGENES procesadas por Vite para producción
 │   ├── components/
-│   │   ├── AcademicDisclaimer.tsx # Banner informativo del carácter demostrativo
 │   │   ├── BenefitsSection.tsx    # Sección de beneficios y valor ergonómico
 │   │   ├── CartDrawer.tsx         # Carrito lateral deslizable con control de stock
 │   │   ├── CatalogSection.tsx     # Catálogo con 4 categorías, buscador y orden
-│   │   ├── Footer.tsx             # Pie de página con enlaces y contacto
-│   │   ├── Header.tsx             # Encabezado (Top Bar) con logo y contador
-│   │   ├── HeroBanner.tsx         # Banner principal con soporte de laptop
+│   │   ├── Footer.tsx             # Pie con redes, contacto y aviso de compras coordinadas
+│   │   ├── Header.tsx             # Encabezado (Top Bar) con logo, navegación y carrito
+│   │   ├── HeroBanner.tsx         # Portada amplia con soporte de laptop
 │   │   ├── OrderPreparationModal.tsx # Preparación del pedido y copia a portapapeles
-│   │   ├── ProductCard.tsx        # Tarjeta de producto con metadata y stock
+│   │   ├── ProductCard.tsx        # Tarjeta de producto con fotografía y stock
 │   │   ├── ProductDetailModal.tsx # Modal de vista detallada de producto
 │   │   ├── ProductImage.tsx       # Componente de imagen con fallback visual
 │   │   └── Toast.tsx              # Notificaciones de retroalimentación
@@ -49,7 +51,8 @@ El sitio ha sido diseñado con la identidad corporativa requerida:
 │   │   └── store.ts               # Tipos TypeScript
 │   ├── App.tsx                    # Componente raíz
 │   ├── index.css                  # Estilos Tailwind CSS v4 y variables de tema
-│   └── main.tsx                   # Punto de entrada de React
+│   ├── main.tsx                   # Punto de entrada de React
+│   └── vite-env.d.ts              # Declaración de tipos para activos de imagen
 ├── index.html                     # HTML5 con fuentes Plus Jakarta Sans
 ├── package.json                   # Dependencias del proyecto
 └── README.md                      # Esta documentación

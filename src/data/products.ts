@@ -1,8 +1,11 @@
 import { Product } from '../types/store';
+import { getProductImageBySku } from '../assets/productImages';
 
 /**
  * Catálogo Oficial KLIKORA TECH
  * Contiene EXCLUSIVAMENTE los 20 productos obligatorios con sus especificaciones exactas.
+ * Todas las imágenes son importadas mediante el empaquetador de Vite para garantizar
+ * su resolución en producción en Vercel.
  */
 export const PRODUCTS: Product[] = [
   {
@@ -13,7 +16,7 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     isFeatured: true,
     description: 'Mouse compacto y cómodo para estudiar y trabajar.',
-    image: '/src/assets/images/product_wireless_combo_1794062555483.jpg'
+    image: getProductImageBySku('KT001')
   },
   {
     sku: 'KT002',
@@ -23,7 +26,7 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     isFeatured: true,
     description: 'Teclado liviano que libera espacio en el escritorio.',
-    image: '/src/assets/images/product_wireless_combo_1794062555483.jpg'
+    image: getProductImageBySku('KT002')
   },
   {
     sku: 'KT003',
@@ -33,7 +36,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     isFeatured: true,
     description: 'Kit práctico para equipar una zona de estudio.',
-    image: '/src/assets/images/product_wireless_combo_1794062555483.jpg'
+    image: getProductImageBySku('KT003')
   },
   {
     sku: 'KT004',
@@ -42,7 +45,8 @@ export const PRODUCTS: Product[] = [
     price: 39.90,
     stock: 32,
     isFeatured: false,
-    description: 'Superficie amplia para mouse y teclado.'
+    description: 'Superficie amplia para mouse y teclado.',
+    image: getProductImageBySku('KT004')
   },
   {
     sku: 'KT005',
@@ -52,7 +56,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     isFeatured: true,
     description: 'Eleva la laptop para mejorar la postura de trabajo.',
-    image: '/src/assets/images/product_laptop_stand_1794062555573.jpg'
+    image: getProductImageBySku('KT005')
   },
   {
     sku: 'KT006',
@@ -61,7 +65,8 @@ export const PRODUCTS: Product[] = [
     price: 79.90,
     stock: 22,
     isFeatured: false,
-    description: 'Conecta accesorios adicionales a tu laptop.'
+    description: 'Conecta accesorios adicionales a tu laptop.',
+    image: getProductImageBySku('KT006')
   },
   {
     sku: 'KT007',
@@ -71,7 +76,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     isFeatured: true,
     description: 'Escucha clases, reuniones o música sin cables.',
-    image: '/src/assets/images/product_audio_headset_1794062557085.jpg'
+    image: getProductImageBySku('KT007')
   },
   {
     sku: 'KT008',
@@ -80,7 +85,8 @@ export const PRODUCTS: Product[] = [
     price: 109.90,
     stock: 22,
     isFeatured: false,
-    description: 'Audífonos pequeños para el uso diario.'
+    description: 'Audífonos pequeños para el uso diario.',
+    image: getProductImageBySku('KT008')
   },
   {
     sku: 'KT009',
@@ -89,7 +95,8 @@ export const PRODUCTS: Product[] = [
     price: 159.90,
     stock: 12,
     isFeatured: true,
-    description: 'Mejora la captura de voz al estudiar o transmitir.'
+    description: 'Mejora la captura de voz al estudiar o transmitir.',
+    image: getProductImageBySku('KT009')
   },
   {
     sku: 'KT010',
@@ -98,7 +105,8 @@ export const PRODUCTS: Product[] = [
     price: 119.90,
     stock: 16,
     isFeatured: false,
-    description: 'Altavoz compacto para escritorio o salidas.'
+    description: 'Altavoz compacto para escritorio o salidas.',
+    image: getProductImageBySku('KT010')
   },
   {
     sku: 'KT011',
@@ -107,7 +115,8 @@ export const PRODUCTS: Product[] = [
     price: 69.90,
     stock: 36,
     isFeatured: true,
-    description: 'Cargador de pared compacto para equipos compatibles.'
+    description: 'Cargador de pared compacto para equipos compatibles.',
+    image: getProductImageBySku('KT011')
   },
   {
     sku: 'KT012',
@@ -116,7 +125,8 @@ export const PRODUCTS: Product[] = [
     price: 24.90,
     stock: 45,
     isFeatured: false,
-    description: 'Cable reforzado para carga y transferencia.'
+    description: 'Cable reforzado para carga y transferencia.',
+    image: getProductImageBySku('KT012')
   },
   {
     sku: 'KT013',
@@ -125,7 +135,8 @@ export const PRODUCTS: Product[] = [
     price: 109.90,
     stock: 25,
     isFeatured: true,
-    description: 'Recarga tus dispositivos durante el día.'
+    description: 'Recarga tus dispositivos durante el día.',
+    image: getProductImageBySku('KT013')
   },
   {
     sku: 'KT014',
@@ -134,7 +145,8 @@ export const PRODUCTS: Product[] = [
     price: 79.90,
     stock: 19,
     isFeatured: false,
-    description: 'Conecta una laptop compatible a monitor o televisor.'
+    description: 'Conecta una laptop compatible a monitor o televisor.',
+    image: getProductImageBySku('KT014')
   },
   {
     sku: 'KT015',
@@ -143,7 +155,8 @@ export const PRODUCTS: Product[] = [
     price: 99.90,
     stock: 21,
     isFeatured: false,
-    description: 'Carga equipos compatibles sin conectar el cable al teléfono.'
+    description: 'Carga equipos compatibles sin conectar el cable al teléfono.',
+    image: getProductImageBySku('KT015')
   },
   {
     sku: 'KT016',
@@ -152,7 +165,8 @@ export const PRODUCTS: Product[] = [
     price: 89.90,
     stock: 24,
     isFeatured: true,
-    description: 'Ilumina tu espacio de estudio con luz regulable.'
+    description: 'Ilumina tu espacio de estudio con luz regulable.',
+    image: getProductImageBySku('KT016')
   },
   {
     sku: 'KT017',
@@ -161,7 +175,8 @@ export const PRODUCTS: Product[] = [
     price: 19.90,
     stock: 50,
     isFeatured: false,
-    description: 'Evita enredos y ordena los cables del escritorio.'
+    description: 'Evita enredos y ordena los cables del escritorio.',
+    image: getProductImageBySku('KT017')
   },
   {
     sku: 'KT018',
@@ -170,7 +185,8 @@ export const PRODUCTS: Product[] = [
     price: 99.90,
     stock: 12,
     isFeatured: false,
-    description: 'Organiza la mesa y eleva la pantalla.'
+    description: 'Organiza la mesa y eleva la pantalla.',
+    image: getProductImageBySku('KT018')
   },
   {
     sku: 'KT019',
@@ -179,7 +195,8 @@ export const PRODUCTS: Product[] = [
     price: 149.90,
     stock: 13,
     isFeatured: true,
-    description: 'Cámara para clases y reuniones en línea.'
+    description: 'Cámara para clases y reuniones en línea.',
+    image: getProductImageBySku('KT019')
   },
   {
     sku: 'KT020',
@@ -188,7 +205,8 @@ export const PRODUCTS: Product[] = [
     price: 34.90,
     stock: 35,
     isFeatured: false,
-    description: 'Sostén el móvil a la vista sin ocupar las manos.'
+    description: 'Sostén el móvil a la vista sin ocupar las manos.',
+    image: getProductImageBySku('KT020')
   }
 ];
 

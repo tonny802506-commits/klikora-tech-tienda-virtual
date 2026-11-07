@@ -2,7 +2,5 @@
   "name": "KLIKORA TECH",
   "description": "Comercio electrónico de tecnología, periféricos y accesorios de estudio y trabajo en Perú. Tecnología para tu día a día.",
   "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

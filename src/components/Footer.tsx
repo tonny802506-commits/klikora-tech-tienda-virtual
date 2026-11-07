@@ -137,12 +137,12 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* Cuadro aclaratorio de demostración */}
+            {/* Indicación discreta de coordinación de compras */}
             <div className="mt-4 p-3 rounded-xl bg-white/5 border border-white/10 text-[11px] text-slate-300 leading-relaxed">
               <span className="font-semibold text-[#09B6A2] block mb-0.5">
-                Proyecto Académico Demostrativo
+                Modalidad de Compra
               </span>
-              Este sitio no tramita cobros con tarjetas ni ventas con valor fiscal. Todos los pedidos son simulaciones locales de preparación de orden.
+              Las compras y entregas se coordinan directamente por canales de contacto. No se procesan pagos en línea ni se solicitan datos de tarjetas.
             </div>
           </div>
 
@@ -154,7 +154,7 @@ export const Footer: React.FC = () => {
             © {new Date().getFullYear()} {STORE_CONFIG.brandName}. Todos los derechos reservados.
           </div>
           <div className="text-[11px] text-slate-400 text-center sm:text-right">
-            Desarrollo web para fines académicos · React + Tailwind CSS
+            {STORE_CONFIG.slogan} · Lima, Perú
           </div>
         </div>
       </div>
